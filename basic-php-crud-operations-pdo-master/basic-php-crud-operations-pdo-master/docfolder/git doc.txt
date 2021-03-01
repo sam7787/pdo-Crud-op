@@ -1,0 +1,28 @@
+Open a terminal window on your local system.
+
+List the branches on your repository.
+1 $ git branch
+2 * master
+
+This output indicates there is a single branch, the master and the asterisk indicates it is currently active.
+
+Create a new branch_name branch in the repository
+1 $ git branch branch_name
+Switch to the branch_name branch to work on it.
+
+1 $ git checkout branch_name
+List the branches again with the git branch command.
+Edit the README file and add a new line.
+Commit the change to the branch_name branch:
+
+1 $ git add .
+2 $ git commit -m "adding a change from the branch_name branch"
+Switch back to the master branch.
+
+1 $ git checkout master
+Push the branch_name branch to Bitbucket.
+
+1 $ git push origin branch_name
+View the repo Source page in Bitbucket.
+You should see both the master and the branch_name branch. When you select the branch_name branch, you see the Source page from that perspective.
+Select the branch_name branch to view its Recent commits.
